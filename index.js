@@ -9,6 +9,8 @@ import errorHandler from "./middlewares/errorHandler.js";
 import authRoutes from "./routes/auth.js";
 import listingRoutes from "./routes/listings.js";
 import statsRoutes from "./routes/stats.js";
+import healthRoutes from "./routes/health.js";
+
 
 dotenv.config();
 connectDB();
@@ -22,6 +24,8 @@ app.use(logger);
 app.use("/api/auth", authRoutes);
 app.use("/api/listings", listingRoutes);
 app.use("/api/stats", statsRoutes);
+app.use("/api/health", healthRoutes);
+
 
 app.use(errorHandler);
 
