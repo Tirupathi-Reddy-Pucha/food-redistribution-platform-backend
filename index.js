@@ -10,6 +10,7 @@ import authRoutes from "./routes/auth.js";
 import listingRoutes from "./routes/listings.js";
 import statsRoutes from "./routes/stats.js";
 import healthRoutes from "./routes/health.js";
+import "./config/envCheck.js";
 
 
 dotenv.config();
